@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-up, .btn-down, .btn-play, .btn-stop {
+    width: 25%;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-up:active, .btn-down:active, .btn-play:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-up {
+    background-color: #2980b9;
+    color: #ecf0f1;
+}
+
+.btn-down, .btn-stop {
+    background-color: #e74c3c;
+    color: #2d3436;
+}
+
+.tempo-input {
+    padding: 1rem;
+    width: 25%;
+}
+
+.btn-play {
+    background-color: #f1c40f;
+    color: #2d3436;
+}
+
+.btn-play:disabled, .btn-stop:disabled, .btn-up:disabled, .btn-down:disabled {
+    background-color: #bdc3c7;
+    color: #2d3436;
+}
+
+.chord-display {
+    border: 1px solid #2d3436;
+    width: 18rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.chord-text--left {
+    color: #2d3436;
+    font-size: 3.2rem;
+}
+
+.chord-text--right {
+    color: #2d3436;
+    font-size: 2.2rem;
+}
+
+.chord-container {
+    position: relative;
+}
+
+.chord-display:nth-child(2) {
+    width: 12rem;
+    height: 6rem;
+    position: absolute;
+    top: 1rem;
+    left: 20rem;
+}
